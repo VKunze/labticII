@@ -18,18 +18,18 @@ public class HasQuarter implements GumBall{
 	
 
 	public void ejectQuarter() {
-		// TODO Auto-generated method stub
-		
+		 state = NO_QUARTER;
+         gumBallActions.displayMessage("Ejected");
 	}
 
 	public void turnCrank() {
-		// TODO Auto-generated method stub
-		
+		gumBallActions.displayMessage("You turned...");
+        state = SOLD;
+        dispense();
 	}
 
 	public void dispense() {
-		// TODO Auto-generated method stub
-		
+		gumBallActions.displayMessage("No gumball dispensed");
 	}
 
 }
